@@ -1,0 +1,541 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: Arial;
+	height: 100%;
+	background: #f3f3f3;
+}
+
+img, fieldset {
+	border: 0;
+}
+
+.none {
+	display: none;
+}
+
+.wrapper, #wrapper {
+	position: relative;
+	height: 100%;
+	background: #f3f3f3;
+}
+
+.invisible {
+	display: none;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 52px;
+	background: #15125f;
+	z-index: 999;
+}
+
+div.content {
+	position: relative;
+	background: #f3f3f3;
+	padding: 71px 0 93px;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 73px;
+	background: url('images/menu_bg.png') repeat-x;
+}
+
+footer a.menu_button {
+	display: block;
+	float: left;
+	width: 54px;
+	height: 57px;
+	margin: 10px 35px 0;
+}
+
+footer a.home {
+	float: left;
+	width: 45px;
+	height: 55px;
+	background-image: url('images/menu_home.png');
+}
+
+footer a.instellingen {
+	float: right;
+	background-image: url('images/menu_instellingen.png');
+}
+
+
+/*************************************************************** Home screen *********************************************************/
+body#home div.content {
+	width: 320px;
+	margin: 0 auto;
+}
+
+body#home div.content a.tegel {
+	display: inline-block;
+	float: left;
+	width: 139px;
+	height: 139px;
+	margin: 10px;
+}
+
+body#home div.content a.mededelingen {
+	background-image: url('images/tegel_mededelingen.png');
+}
+
+body#home div.content a.rooster {
+	background-image: url('images/tegel_rooster.png');
+}
+
+body#home div.content a.route {
+	background-image: url('images/tegel_route.png');
+}
+
+body#home div.content a.bestanden {
+	background-image: url('images/tegel_bestanden.png');
+}
+
+/*************************************************************** Instellingen screen *********************************************************/
+body#instellingen div.content {
+	
+}
+
+body#instellingen div.content form span {
+	display: block;
+	width: 85%;
+	margin: 0 auto;
+	font-size: 19px;
+}
+
+body#instellingen div.content input {
+	display: block;
+	width: 85%;
+	height: 35px;
+	/*background: url('images/input_bg_groot.png');*/
+	-moz-border-radius: 13px;
+	border-radius: 13px;
+	padding: 0 10px;
+	margin: 7px auto 15px;
+	border: 1px solid #e4007b;
+}
+
+body#instellingen div.content div.klein {
+	width: 85%;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+body#instellingen div.content div.klein input.klein {
+	display: inline;
+	width: 57px;
+	margin: 7px 0 15px -10px;
+	/*background: url('images/input_bg_klein.png');*/
+}
+
+body#instellingen div.content div.klein span {
+	display: inline;
+	width: auto;
+	margin: 0;
+}
+
+body#instellingen div.content div#gps {
+	width: 85%;
+	height: 160px;
+	margin: 0 auto 15px;
+	padding: 0 10px;
+}
+
+body#instellingen div.content div#gps span {
+	display: inline;
+	width: auto;
+	margin: 0;
+}
+
+body#instellingen div.content div#gps a {
+	display: block;
+	margin: 7px 0 0 -10px;
+}
+
+body#instellingen div.content a.opslaan_button {
+	display: block;
+	width: 76px;
+	height: 31px;
+	background: url('images/button_opslaan.png');
+	margin: 20px auto 0;
+}
+
+/*************************************************************** Mededelingen screen *********************************************************/
+body#mededelingen div.content {
+	
+}
+
+body#mededelingen div.content a#terug_button {
+	display: block;
+	width: 76px;
+	height: 31px;
+	background: url('images/button_terug.png');
+	margin: 20px auto 0;
+}
+
+body#mededelingen div.content div.mededeling {
+	width: 92%;
+	height: 42px;
+	background: #bbcce0;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin: 0 auto 10px;
+	overflow: hidden;
+}
+
+body#mededelingen div.content div.open {
+	background: #bbcce0;
+	padding: 0 0 10px;
+}
+
+body#mededelingen div.content div.auto_height {
+	height: auto;
+}
+
+body#mededelingen div.content div.mededeling h1 {
+	margin: 0 0 10px;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 42px;
+	background: url('images/+.png') 10px 16px no-repeat;
+	overflow: hidden;
+}
+
+body#mededelingen div.content div.open h1 {
+	border-bottom: 1px solid #dcdcdc;
+	background: url('images/-.png') 11px 20px no-repeat;
+}
+
+body#mededelingen div.content div.mededeling h1 a {
+	position: relative;
+	display: block;
+	height: 37px;
+	padding: 0 27px 0 25px;
+	text-decoration: none;
+	color: #000;
+	overflow: hidden;
+}
+
+body#mededelingen div.content div.mededeling h1 a span {
+	position: absolute;
+	right: 7px;
+	top: 0px;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+body#mededelingen div.content div.mededeling ul {
+	list-style: none;
+}
+
+body#mededelingen div.content div.mededeling ul li {
+	list-style: none;
+	padding: 0 7px 0 25px;
+	font-size: 10px;
+	line-height: 17px;
+}
+
+body#mededelingen div.content div.mededeling ul li a {
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+}
+
+body#mededelingen div.content div.mededeling ul li a:hover {
+	color: #e4007b;
+}
+
+/*************************************************************** Mededeling screen *********************************************************/
+body#mededeling div.content {
+	
+}
+
+body#mededeling div.content a#terug_button {
+	display: block;
+	width: 76px;
+	height: 31px;
+	background: url('images/button_terug.png');
+	margin: 20px auto 0;
+}
+
+body#mededeling div.content div.mededeling {
+	width: 92%;
+	height: 42px;
+	background: #bbcce0;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin: 0 auto 10px;
+	overflow: hidden;
+}
+
+body#mededeling div.content div.open {
+	background: #bbcce0;
+	padding: 0 0 10px;
+}
+
+body#mededeling div.content div.auto_height {
+	height: auto;
+}
+
+body#mededeling div.content div.mededeling h1 {
+	height: 37px;
+	background: url('images/-.png') 11px 20px no-repeat;
+	padding: 0 7px 0 25px;
+	margin: 0 0 10px;
+	font-size: 19px;
+	font-weight: normal;
+	line-height: 42px;
+	border-bottom: 1px solid #dcdcdc;
+	overflow: hidden;
+}
+
+body#mededeling div.content div.mededeling p {
+	padding: 0 7px 0 25px;
+	font-size: 13px;
+	font-weight: normal;
+	text-decoration: none;
+	color: #000;
+	line-height: 18px;
+}
+
+/*************************************************************** Rooster screen *********************************************************/
+body#rooster div.content {
+	
+}
+body#rooster div.content div#agenda {
+	position: fixed;
+	width: 100%;
+	height: 55%;
+	background: #f3f3f3;
+	padding: 10px 0 0;
+	top: 52px;
+	z-index: 999;
+}
+
+body#rooster div.content div#agenda div#maand_nav {
+	width: 97%;
+	height: 20px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 17px;
+}
+
+body#rooster div.content div#agenda div#maand_nav a {
+	display: block;
+	width: 12px;
+	height: 18px;
+}
+
+body#rooster div.content div#agenda div#maand_nav a.left {
+	float: left;
+}
+
+body#rooster div.content div#agenda div#maand_nav a.right {
+	float: right;
+}
+
+body#rooster div.content table {
+	width: 98%;
+	margin: 0 auto;
+}
+
+body#rooster div.content table tr th {
+	width: 14.29%;
+	height: 30px;
+	padding: 5px 0 0;
+	text-align: center;
+	font-weight: normal;
+}
+
+body#rooster div.content table#kalender {
+	width: 98%;
+	height: 100%;/*55%;*/
+	margin: 0 auto;
+	border-top: 1px solid #b6b6b6;
+	border-right: 1px solid #b6b6b6;
+	border-bottom: 1px solid #b6b6b6;
+}
+
+body#rooster div.content table#kalender tr td {
+	padding: 5px;
+	background: #dedede;
+	border-left: 1px solid #b6b6b6;
+	border-right: 1px solid #efefef;
+	border-bottom: 1px solid #b6b6b6;
+	border-top: 1px solid #efefef;
+	text-align: center;
+	color: #15125f;
+	font-weight: bold;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+body#rooster div.content table#kalender tr.last_row td {
+	border-bottom: none;
+}
+
+body#rooster div.content table#kalender tr td.current_day {
+	background: #e4007b;
+	color: #fff;
+}
+
+body#rooster div.content table#kalender tr td.current_day a {
+	color: #fff;
+}
+
+body#rooster div.content table#kalender tr td a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #15125f;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+body#rooster div.content table#kalender tr td.selected_day {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f663b2), to(#e4007b),color-stop(0.5, #f663b2),color-stop(0.5, #e4007b));
+	background: -webkit-linear-gradient(top, #f663b2 50%, #e4007b 50%);
+	background: -moz-linear-gradient(center top , #f663b2 50%, #e4007b 50%) repeat scroll 0 0 transparent;
+	background: -ms-linear-gradient(top, #f663b2 50%, #e4007b 50%); 
+	background: -o-linear-gradient(top, #f663b2 50%, #e4007b 50%);
+	color: #fff;
+}
+
+body#rooster div.content table#kalender tr td.next_month, body#rooster div.content table#kalender tr td.last_month {
+	color: #909090;
+}
+
+body#rooster div.content table#kalender tr td.next_month.current_day, body#rooster div.content table#kalender tr td.last_month.current_day {
+	background: #cdcdcd !important;
+}
+
+body#rooster div.content table#kalender tr td.selected_day {
+	color: #fff;
+}
+
+body#rooster div.content table#kalender tr td.activity {
+	background: #dedede url('images/activity_bullet_blue.png') center bottom no-repeat;
+}
+
+body#rooster div.content table#kalender tr td.next_month.activity, body#rooster div.content table#kalender tr td.last_month.activity {
+	background: #dedede url('images/activity_bullet_gray.png') center bottom no-repeat;
+}
+
+body#rooster div.content table#kalender tr td.current_day.activity {
+	background: #e4007b url('images/activity_bullet_white.png') center bottom no-repeat;
+}
+
+body#rooster div.content table#kalender tr td.selected_day.activity {
+	background: url('images/activity_bullet_white.png') center bottom no-repeat, -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f663b2), to(#e4007b),color-stop(0.5, #f663b2),color-stop(0.5, #e4007b));
+	background: url('images/activity_bullet_white.png') center bottom no-repeat, -webkit-linear-gradient(top, #f663b2 50%, #e4007b 50%);
+	background: url('images/activity_bullet_white.png') center bottom no-repeat, -moz-linear-gradient(center top , #f663b2 50%, #e4007b 50%) repeat scroll 0 0 transparent;
+	background: url('images/activity_bullet_white.png') center bottom no-repeat, -ms-linear-gradient(top, #f663b2 50%, #e4007b 50%); 
+	background: url('images/activity_bullet_white.png') center bottom no-repeat, -o-linear-gradient(top, #f663b2 50%, #e4007b 50%);
+}
+
+body#rooster div.content ul {
+	list-style: none;
+}
+
+body#rooster div.content ul li {
+	position: relative;
+	height: 60px;
+	padding: 0 5px 0 20px;
+	border-bottom: 1px solid #979797;
+	list-style: none;
+	cursor: pointer;
+}
+
+body#rooster div.content ul li span {
+	display: block;
+	width: 45px;
+	height: 60px;
+	line-height: 60px;
+}
+
+body#rooster div.content ul li h1 {
+	position: absolute;
+	height: 20px;
+	font-size: 15px;
+	overflow: hidden;
+	top: 8px;
+	left: 70px;
+}
+
+body#rooster div.content ul li h2 {
+	position: absolute;
+	height: 18px;
+	font-size: 13px;
+	color: #979797;
+	overflow: hidden;
+	bottom: 9px;
+	left: 70px;
+}
+
+
+
+
+
+
+/************************************************** SPLASH SCREEN ************************************************************/
+body#splash {
+	background: #fff;
+}
+
+#splash header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 72px;
+	background: #0082fe;
+	z-index: 999;
+}
+
+#splash div.content {
+	background: #fff;
+	width: 100%;
+	top: 15%;
+}
+
+#splash footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 25px;
+	background: #0082fe;
+}
+
+#splash .content img {
+	display: block;
+	margin: 0 auto;
+	width: 298px;
+}
+
+#splash header h1 {
+	font-size: 47px;
+	color: #fff;
+	line-height: 72px;
+	text-align: center;
+}
+
+#splash .content p {
+	width: 100%;
+	text-align: center;
+	color: #01182e;
+	font-weight: bold;
+	padding: 20px 0 0;
+}

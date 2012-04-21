@@ -1,0 +1,31 @@
+C:\MoSync\workspace\ipmedt4\FinalOutput\Release\Samsung\Galaxy\ S\main.s:  \
+ C:\MoSync\workspace\ipmedt4\main.cpp \
+  c:/MoSync/include/Wormhole/WebAppMoblet.h \
+  c:/MoSync/include/MAUtil/Moblet.h c:/MoSync/include/ma.h \
+  c:/MoSync/include/maapi.h c:/MoSync/include/maapi_defs.h \
+  c:/MoSync/include/maassert.h c:/MoSync/include/ma.h \
+  c:/MoSync/include/MAUtil/Environment.h \
+  c:/MoSync/include/MAUtil/Vector.h \
+  c:/MoSync/include/MAUtil/ListenerSet.h \
+  c:/MoSync/include/MAUtil/String.h c:/MoSync/include/MAUtil/RefCounted.h \
+  c:/MoSync/include/NativeUI/Screen.h c:/MoSync/include/NativeUI/Widget.h \
+  c:/MoSync/include/conprint.h c:/MoSync/include/maarg.h \
+  c:/MoSync/include/mastring.h c:/MoSync/include/mactype.h \
+  c:/MoSync/include/mavsprintf.h c:/MoSync/include/MAUtil/Map.h \
+  c:/MoSync/include/MAUtil/Dictionary.h c:/MoSync/include/kazlib/dict.h \
+  c:/MoSync/include/limits.h c:/MoSync/include/MAUtil/collection_common.h \
+  c:/MoSync/include/MAUtil/Dictionary_impl.h \
+  c:/MoSync/include/MAUtil/Vector.h \
+  c:/MoSync/include/MAUtil/Environment.h c:/MoSync/include/MAUtil/util.h \
+  c:/MoSync/include/MAUtil/String.h c:/MoSync/include/IX_WIDGET.h \
+  c:/MoSync/include/NativeUI/WidgetUtil.h \
+  c:/MoSync/include/NativeUI/WebView.h \
+  c:/MoSync/include/Wormhole/WebViewMessage.h \
+  c:/MoSync/include/MAUtil/HashMap.h c:/MoSync/include/MAUtil/HashDict.h \
+  c:/MoSync/include/maheap.h c:/MoSync/include/kazlib/hash.h \
+  c:/MoSync/include/MAUtil/HashDict_impl.h \
+  c:/MoSync/include/MAUtil/HashMap_impl.h \
+  c:/MoSync/include/Wormhole/FileUtil.h \
+  C:\MoSync\workspace\ipmedt4\/StringBuilder.h \
+  c:/MoSync/include/MAUtil/PlaceholderPool.h c:/MoSync/include/maarg.h \
+  c:/MoSync/include/MAUtil/DataHandler.h

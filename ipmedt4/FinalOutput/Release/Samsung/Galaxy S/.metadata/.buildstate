@@ -1,0 +1,73 @@
+rebuild-needed = false
+variant = Samsung/Galaxy\\ S Release Finalizer 
+success = true
+timestamp = 1335044152396
+output = C:\\MoSync\\workspace\\ipmedt4\\FinalOutput\\Release\\Samsung\\Galaxy S\\package\\ipmedt4.apk
+
+[files]
+LocalFiles/images/activity_bullet_gray.png = 1333069236292
+LocalFiles/images/button_opslaan.png = 1335040749494
+LocalFiles/js/bridge.js = 1335036249836
+StringBuilder.cpp = 1334783163247
+LocalFiles/images/activity_bullet_white.png = 1333069236297
+LocalFiles/js/rooster.js = 1334950168479
+.project = 1335044021776
+LocalFiles/images/menu_home.png = 1333069236351
+LocalFiles/style.css = 1335040773089
+LocalFiles/images/menu_instellingen.png = 1333069236355
+.mosyncproject.local = 1335044147492
+.mosyncproject = 1335044147488
+LocalFiles/images/header_blackboard.png = 1333069236309
+LocalFiles/images/pijl_links.png = 1333069236358
+LocalFiles/images/tegel_bestanden.png = 1333069236395
+LocalFiles/images/button_terug.png = 1333069236301
+LocalFiles/js/jquery.min.js = 1334818923808
+.cproject = 1335044018272
+LocalFiles/images/tegel_route.png = 1333069236443
+StringBuilder.h = 1334783163217
+LocalFiles/images/splash_logo.png = 1335039365709
+LocalFiles/images/-.png = 1333069236271
+.settings/org.eclipse.wst.jsdt.ui.superType.container = 1335044021783
+LocalFiles/home.html = 1335043831066
+LocalFiles/js/jquery-ui.min.js = 1334818923865
+main.cpp = 1335043954667
+.build = 1335044018367
+LocalFiles/images/selected_day_bg.png = 1333069236363
+LocalFiles/images/input_map.png = 1333069236343
+Resources/Resources.lst = 1335044018326
+LocalFiles/images/activity_bullet_blue.png = 1333069236277
+LocalFiles/images/header_instellingen.png = 1333069236316
+LocalFiles/images/pijl_rechts.png = 1333069236361
+LocalFiles/images/+.png = 1333069236265
+LocalFiles/images/header_mededelingen.png = 1333069236323
+LocalFiles/js/mededelingen.js = 1335043747506
+LocalFiles/images/menu_bg.png = 1333069236346
+LocalFiles/images/tegel_mededelingen.png = 1333069236418
+LocalFiles/images/tegel_rooster.png = 1333069236431
+LocalFiles/images/header_rooster.png = 1333069236326
+.settings/org.eclipse.wst.jsdt.ui.superType.name = 1335044021781
+Resources/LocalFiles.bin = 1335044152446
+
+[dependencies]
+/ipmedt4/FinalOutput/Release/Samsung/Galaxy S/main.s = /ipmedt4/MoSync/include/limits.h, /ipmedt4/MoSync/include/mactype.h, /ipmedt4/MoSync/include/MAUtil/ListenerSet.h, /ipmedt4/MoSync/include/MAUtil/collection_common.h, /ipmedt4/MoSync/include/MAUtil/PlaceholderPool.h, /ipmedt4/StringBuilder.h, /ipmedt4/MoSync/include/MAUtil/Moblet.h, /ipmedt4/MoSync/include/Wormhole/WebViewMessage.h, /ipmedt4/MoSync/include/MAUtil/Dictionary.h, /ipmedt4/MoSync/include/MAUtil/Environment.h, /ipmedt4/MoSync/include/MAUtil/Vector.h, /ipmedt4/MoSync/include/maarg.h, /ipmedt4/MoSync/include/MAUtil/HashMap.h, /ipmedt4/MoSync/include/mastring.h, /ipmedt4/MoSync/include/maapi.h, /ipmedt4/MoSync/include/maheap.h, /ipmedt4/MoSync/include/MAUtil/HashDict_impl.h, /ipmedt4/MoSync/include/mavsprintf.h, /ipmedt4/MoSync/include/NativeUI/Screen.h, /ipmedt4/main.cpp, /ipmedt4/MoSync/include/kazlib/hash.h, /ipmedt4/MoSync/include/NativeUI/WebView.h, /ipmedt4/MoSync/include/MAUtil/RefCounted.h, /ipmedt4/MoSync/include/MAUtil/String.h, /ipmedt4/MoSync/include/ma.h, /ipmedt4/MoSync/include/maassert.h, /ipmedt4/MoSync/include/MAUtil/Map.h, /ipmedt4/MoSync/include/MAUtil/DataHandler.h, /ipmedt4/MoSync/include/conprint.h, /ipmedt4/MoSync/include/Wormhole/WebAppMoblet.h, /ipmedt4/MoSync/include/maapi_defs.h, /ipmedt4/MoSync/include/NativeUI/Widget.h, /ipmedt4/MoSync/include/MAUtil/HashMap_impl.h, /ipmedt4/MoSync/include/IX_WIDGET.h, /ipmedt4/MoSync/include/kazlib/dict.h, /ipmedt4/MoSync/include/NativeUI/WidgetUtil.h, /ipmedt4/MoSync/include/MAUtil/util.h, /ipmedt4/MoSync/include/Wormhole/FileUtil.h, /ipmedt4/MoSync/include/MAUtil/Dictionary_impl.h, /ipmedt4/MoSync/include/MAUtil/HashDict.h
+/ipmedt4/Resources/Resources.lst = /ipmedt4/FinalOutput/Release/Samsung/Galaxy S/resources
+/ipmedt4/StringBuilder.cpp = /ipmedt4/FinalOutput/Release/Samsung/Galaxy S/StringBuilder.s
+/ipmedt4/Resources/LocalFiles.bin = /ipmedt4/LocalFiles/images/button_terug.png, /ipmedt4/LocalFiles/images/splash_logo.png, /ipmedt4/LocalFiles/images/header_blackboard.png, /ipmedt4/LocalFiles/images/tegel_route.png, /ipmedt4/LocalFiles/images/tegel_rooster.png, /ipmedt4/LocalFiles/images/activity_bullet_white.png, /ipmedt4/LocalFiles/images/activity_bullet_blue.png, /ipmedt4/LocalFiles/images/tegel_bestanden.png, /ipmedt4/LocalFiles/images/activity_bullet_gray.png, /ipmedt4/LocalFiles/js/rooster.js, /ipmedt4/LocalFiles/images/+.png, /ipmedt4/LocalFiles/images, /ipmedt4/LocalFiles/images/-.png, /ipmedt4/LocalFiles/images/selected_day_bg.png, /ipmedt4/LocalFiles/style.css, /ipmedt4/LocalFiles/images/header_rooster.png, /ipmedt4/LocalFiles/images/menu_home.png, /ipmedt4/LocalFiles/images/tegel_mededelingen.png, /ipmedt4/LocalFiles/home.html, /ipmedt4/LocalFiles/images/input_map.png, /ipmedt4/LocalFiles/images/menu_instellingen.png, /ipmedt4/LocalFiles/js/jquery.min.js, /ipmedt4/LocalFiles/js/bridge.js, /ipmedt4/LocalFiles/js/mededelingen.js, /ipmedt4/LocalFiles/images/pijl_rechts.png, /ipmedt4/LocalFiles, /ipmedt4/LocalFiles/images/pijl_links.png, /ipmedt4/LocalFiles/images/header_mededelingen.png, /ipmedt4/LocalFiles/images/menu_bg.png, /ipmedt4/LocalFiles/images/header_instellingen.png, /ipmedt4/LocalFiles/images/button_opslaan.png, /ipmedt4/LocalFiles/js, /ipmedt4/LocalFiles/js/jquery-ui.min.js
+/ipmedt4/main.cpp = /ipmedt4/FinalOutput/Release/Samsung/Galaxy S/main.s
+/ipmedt4/FinalOutput/Release/Samsung/Galaxy S/MAHeaders.h = /ipmedt4/Resources/Resources.lst
+/ipmedt4/FinalOutput/Release/Samsung/Galaxy S/StringBuilder.s = /ipmedt4/MoSync/include/mavsprintf.h, /ipmedt4/MoSync/include/mactype.h, /ipmedt4/MoSync/include/MAUtil/String.h, /ipmedt4/MoSync/include/MAUtil/RefCounted.h, /ipmedt4/MoSync/include/MAUtil/PlaceholderPool.h, /ipmedt4/StringBuilder.h, /ipmedt4/MoSync/include/ma.h, /ipmedt4/StringBuilder.cpp, /ipmedt4/MoSync/include/conprint.h, /ipmedt4/MoSync/include/maapi_defs.h, /ipmedt4/MoSync/include/MAUtil/Vector.h, /ipmedt4/MoSync/include/maarg.h, /ipmedt4/MoSync/include/mastring.h, /ipmedt4/MoSync/include/maapi.h
+/ipmedt4/FinalOutput/Release/Samsung/Galaxy S/resources = /ipmedt4/Resources/LocalFiles.bin
+
+[build-properties]
+build.prefs:memory.heap/Debug = 3072
+build.prefs:additional.libraries/Debug = MAUtilD.lib, NativeUID.lib, MAFSD.lib, WormholeD.lib
+com.mobilesorcery.sdk.html5.support = true
+template.id = project.html5.hybrid
+build.prefs:additional.libraries = MAUtil.lib, NativeUI.lib, MAFS.lib, Wormhole.lib
+build.prefs:memory.stack/Release = 512
+build.prefs:memory.heap/Release = 3072
+build.prefs:memory.data/Debug = 4096
+build.prefs:memory.stack/Debug = 512
+privileged.access.token = B634039A1176493B86F05A08CE73FB39
+build.prefs:memory.data/Release = 4096
+

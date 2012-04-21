@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home screen</title>
+
+<link type="text/css" rel="stylesheet" href="style.css" />
+
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/jquery-ui.min.js" type="text/javascript"></script>
+
+<script src="js/bridge.js"></script>
+
+<script type="text/javascript" src="js/rooster.js"></script>
+<script type="text/javascript" src="js/mededelingen.js"></script>
+
+<script>
+var xmlData = "";
+var xmlDataMededelingen = "";
+var roosterKlas = '';
+var username = '';
+var password = '';
+
+var siteDir = 'http://www.whappyzap.nl/app/';
+var month = new Date().getMonth()+1;
+var year = new Date().getFullYear();
+var day = '';
+
+function getUrlVars() { // Om de get variabelen op te halen
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    return vars;
+}
+
+function changePage(wrapper)
+{
+	resetDimensions();
+	
+	if(wrapper == 'mededelingen' && $('#mededeling_wrapper header img').attr('src') != 'images/header_mededelingen.png')
+			$('#mededeling_wrapper header img').attr('src','images/header_mededelingen.png');
+	
+	if(wrapper == 'rooster')
+	{
+		if($('#mededeling_wrapper header img').attr('src') != 'images/header_rooster.png')
+			$('#mededeling_wrapper header img').attr('src','images/header_rooster.png');
+	}
+	
+	if(wrapper == 'roosterdetail')
+		wrapper = 'mededeling';
+	
+	$('body').attr('id', wrapper);
+	$('.visible').toggleClass('visible').toggleClass('invisible');
+	$('#'+wrapper+'_wrapper').toggleClass('visible').toggleClass('invisible');
+	
+	if(wrapper == 'rooster')
+	{
+		changeTableDimensions();
+	}
+	
+}
+
+$(document).ready(function(){
+	//alert('hahaah');
+	$('.menu_button.home').click(function(){
+		changePage('home');
+		return false;  
+		  });
+
+	$('.menu_button.instellingen').click(function(){
+		changePage('instellingen');
+		return false;  
+		  });
+	
+	if(getUrlVars()['action'] != undefined && getUrlVars()['action'] == 'gegevens')
+	{
+		setTimeout("changePage('instellingen')", 3500);
+		
+		$('#instellingen_wrapper .menu_button.home').unbind('click').click(function(){
+			return false;
+		});
+		
+		$('#instellingen_wrapper .menu_button.instellingen').unbind('click').click(function(){
+			return false;
+		});
+	}
+	else
+		changePage('home');
+	
+	if(getUrlVars()['klas'] != undefined)
+	{
+		roosterKlas = getUrlVars()['klas'];
+		$('input[name=rooster]').val(roosterKlas);
+	}
+		
+	if(getUrlVars()['username'] != undefined)
+	{
+		username = getUrlVars()['username'];
+		$('input[name=studentnummer]').val(username);
+	}
+		
+	if(getUrlVars()['password'] != undefined)
+	{
+		password = getUrlVars()['password'];
+		$('input[name=wachtwoord]').val(password);
+	}
+
+	createCalendar(month, year, day); // Kalender invullen
+	
+	if(roosterKlas != "")
+	$.ajax({ // Rooster data ophalen
+		type: "GET",
+		url: siteDir+"getRooster.php?klas="+roosterKlas,
+		dataType: "xml",
+  		//data: { klas: roosterKlas },
+		success: function(data){
+			xmlData = data;
+			parseXml(xmlData, month, year); // Rooster data parsen in de kalender
+			}
+	});
+	
+	if(username != "" && password != "")
+	$.ajax({ // Rooster data ophalen
+		type: "GET",
+		url: siteDir+"getMededelingen.php?username="+username+"&password="+password,
+		dataType: "xml",
+  		//data: { username: username,
+		//		password: password},
+		success: function(data){
+			xmlDataMededelingen = data;
+			parseXmlMededelingen(xmlDataMededelingen); // Mededelingen data parsen in de layout
+			},
+		error: function(xhr, ajaxOptions, thrownError){
+			//alert(thrownError);
+		}
+	});
+	
+	$('a#opslaan').click(function(){
+	 if($('input[name=studentnummer]').val() != '' && 
+		$('input[name=wachtwoord]').val() != '' && 
+		$('input[name=rooster]').val() != '')
+	 {
+		 
+		 bridge.messagehandler.send({messageName: "Opslaan", 
+			 						 snummer: $('input[name=studentnummer]').val(),
+			 						 wachtwoord: $('input[name=wachtwoord]').val(),
+			 						 rooster: $('input[name=rooster]').val()}, null);
+	 }
+	 else
+	 {
+		 alert('Je moet wel eerst alle gegevens invullen voor je verder kunt');
+	 }
+	return false;
+	});
+});
+
+function opgeslagen(success, snummer, ww, klas)
+{
+	
+	if(success == "true")
+	{
+		if(username != snummer || password != ww)
+		{
+			username = snummer;
+			password = ww;
+			
+			$.ajax({ // Rooster data ophalen
+				type: "GET",
+				url: siteDir+"getMededelingen.php?username="+username+"&password="+password,
+				dataType: "xml",
+		  		//data: { username: username,
+				//		password: password},
+				success: function(data){
+					xmlDataMededelingen = data;
+					parseXmlMededelingen(xmlDataMededelingen); // Mededelingen data parsen in de layout
+					},
+				error: function(xhr, ajaxOptions, thrownError){
+					//alert(thrownError);
+				}
+			});
+		}
+		
+		month = new Date().getMonth()+1;
+		year = new Date().getFullYear();
+		day = '';
+		
+		if(roosterKlas != klas)
+		{
+			roosterKlas = klas;
+			
+			$.ajax({ // Rooster data ophalen
+				type: "GET",
+				url: siteDir+"getRooster.php?klas="+roosterKlas,
+				dataType: "xml",
+		  		//data: { klas: roosterKlas },
+				success: function(data){
+					xmlData = data;
+					createCalendar(month, year, day);
+					parseXml(xmlData, month, year); // Rooster data parsen in de kalender
+					},
+					error: function(xhr, ajaxOptions, thrownError){
+						//alert(thrownError);
+					}
+			});
+		}
+		
+		$('#instellingen_wrapper .menu_button.home').click(function(){
+			changePage('home');
+			return false;  
+		});
+
+		$('#instellingen_wrapper .menu_button.instellingen').click(function(){
+			changePage('instellingen');
+			return false;  
+		});
+		
+		changePage('home');
+		alert('opgeslagen');
+	}
+	
+	if(success == "false")
+	{
+		alert('Er ging wat mis tijdens het opslaan van je gegevens.');
+	}
+}
+</script>
+
+</head>
+
+<body id="splash">
+
+<!-- Splash pagina -->
+<div class="wrapper visible" id="splash_wrapper">
+
+	<header>
+		<h1>WhappyZap</h1>
+	</header>
+	
+	<div class="content">
+		<img src="images/splash_logo.png" alt="WhappyZap" />
+		
+		<p>Door:<br />Tim Colla &amp; Bjorn Hoogeveen</p>
+	</div>
+	
+	<footer>
+	</footer>
+	
+</div><!-- Einde Splash pagina -->
+
+<!-- Home pagina -->
+<div class="wrapper invisible" id="home_wrapper">
+
+	<header>
+		<img src="images/header_blackboard.png" alt="Blackboard" />
+	</header>
+	
+	<div class="content">
+		<a href="" class="tegel mededelingen" onClick="changePage('mededelingen'); return false;"></a>
+		<a href="" class="tegel rooster" onClick="changePage('rooster'); return false;"></a>
+		<a href="" class="tegel route" onClick="return false;"></a>
+		<a href="" class="tegel bestanden" onClick="return false;"></a>
+	</div>
+	
+	<footer>
+		<a href="#" class="menu_button home"></a>
+		<a href="#" class="menu_button instellingen"></a>
+	</footer>
+
+</div> <!-- Einde Home pagina -->
+
+<!-- Instellingen pagina -->
+<div class="wrapper invisible" id="instellingen_wrapper">
+
+	<header>
+		<img src="images/header_instellingen.png" alt="Instellingen" />
+	</header>
+	
+	<div class="content">
+		<form action="#" method="post">
+		
+			<fieldset>
+			
+				<span>Studentnummer:</span>
+				<input type="text" name="studentnummer" />
+				
+				<span>Wachtwoord:</span>
+				<input type="password" name="wachtwoord" />
+				
+				<span>Rooster:</span>
+				<input type="text" name="rooster" />
+				
+				<a href="#" id="opslaan" class="opslaan_button"></a>
+				<!--<span>Rooster melding:</span>
+				<div class="klein">
+					<input type="text" name="rooster_melding" class="klein" /> <span>Min.</span>
+				</div>
+				
+				<div id="gps">
+					<span>GPS locatie meldingen:</span>
+					<a href="">
+						<img src="images/input_map.png" alt="gps map" />
+					</a>
+				</div>-->
+				
+			</fieldset>
+			
+		</form>
+	</div>
+	
+	<footer>
+		<a href="#" class="menu_button home"></a>
+		<a href="#" class="menu_button instellingen"></a>
+	</footer>
+
+</div> <!-- Einde Instellinge pagina -->
+
+<!-- Rooster pagina -->
+<div class="wrapper invisible" id="rooster_wrapper">
+
+	<header>
+		<img src="images/header_rooster.png" alt="Rooster" />
+	</header>
+	
+	<div class="content">
+		<div id="agenda">
+			<div id="maand_nav">
+				<a href="#" class="left"><img src="images/pijl_links.png" alt="Vorige maand" /></a>
+				<span>maart 2012</span>
+				<a href="#" class="right"><img src="images/pijl_rechts.png" alt="Volgende maand" /></a>
+			</div>
+		
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<th>ma</th>
+					<th>di</th>
+					<th>wo</th>
+					<th>do</th>
+					<th>vr</th>
+					<th>za</th>
+					<th>zo</th>
+				</tr>
+			</table>
+			
+			<table id="kalender" cellpadding="0" cellspacing="0">
+			</table>
+			<div id="jahoor"></div>
+		</div>
+		
+		<ul class="items">
+
+		</ul>
+	</div>
+	
+	<footer>
+		<a href="#" class="menu_button home"></a>
+		<a href="#" class="menu_button instellingen"></a>
+	</footer>
+
+</div> <!-- Einde Rooster pagina -->
+
+<!-- Rooster-/mededeling detail pagina -->
+<div class="wrapper invisible" id="mededeling_wrapper">
+
+	<header>
+		<img src="images/header_mededelingen.png" alt="Mededelingen" />
+	</header>
+	
+	<div class="content">
+	</div>
+	
+	<footer>
+		<a href="#" class="menu_button home"></a>
+		<a href="#" class="menu_button instellingen"></a>
+	</footer>
+
+</div> <!-- Einde Rooster-/mededeling detail pagina -->
+
+<!-- Mededelingen pagina -->
+<div class="wrapper invisible" id="mededelingen_wrapper">
+
+	<header>
+		<img src="images/header_mededelingen.png" alt="Mededelingen" />
+	</header>
+	
+	<div class="content">
+	</div>
+	
+	<footer>
+		<a href="#" class="menu_button home"></a>
+		<a href="#" class="menu_button instellingen"></a>
+	</footer>
+
+</div> <!-- Einde Mededelingen pagina -->
+
+</body>
+</html>
