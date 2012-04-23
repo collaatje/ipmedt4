@@ -7,6 +7,8 @@ body {
 	font-family: Arial;
 	height: 100%;
 	background: #f3f3f3;
+	margin: 0;
+	padding: 0;
 }
 
 img, fieldset {
@@ -467,10 +469,10 @@ body#rooster div.content ul li span {
 
 body#rooster div.content ul li h1 {
 	position: absolute;
-	height: 20px;
+	height: 18px;
 	font-size: 15px;
 	overflow: hidden;
-	top: 8px;
+	top: 10px;
 	left: 70px;
 }
 
