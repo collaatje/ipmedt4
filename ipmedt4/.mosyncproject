@@ -12,6 +12,8 @@
 <property key="build.prefs:memory.stack/Debug" value="512"/>
 <property key="build.prefs:memory.stack/Release" value="512"/>
 <property key="com.mobilesorcery.sdk.html5.support" value="true"/>
+<property key="symbian.uids:uid.s60v2uid" value="0x09d59f02"/>
+<property key="symbian.uids:uid.s60v3uid" value="0xe69697e9"/>
 <property key="template.id" value="project.html5.hybrid"/>
 </properties>
 </project>

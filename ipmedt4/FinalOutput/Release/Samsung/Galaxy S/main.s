@@ -1,6 +1,6 @@
 .model full
-	.sourcedir 'C:\MoSync\workspace\ipmedt4/'
-	.sourcefile 'C:\MoSync\workspace\ipmedt4\main.cpp'
+	.sourcedir 'C:\Users\Tim\git\ipmedt4\ipmedt4/'
+	.sourcefile 'C:\Users\Tim\git\ipmedt4\ipmedt4\main.cpp'
 	.stabs	"gcc2_compiled.",60,0,0,0
 	.stabs	"__vtbl_ptr_type:t(0,1)=*(0,2)=f(0,3)=r(0,3);-2147483648;2147483647;",128,0,0,0
 	.stabs	"bool:t(0,4)=@s8;-16;",128,0,0,0
@@ -188,7 +188,7 @@
 	.stabs	"c:/MoSync/include/Wormhole/FileUtil.h",130,0,0,0
 	.stabn	162,0,0,0
 	.stabn	162,0,0,0
-	.stabs	"C:\\MoSync\\workspace\\ipmedt4\\/StringBuilder.h",130,0,0,0
+	.stabs	"C:\\Users\\Tim\\git\\ipmedt4\\ipmedt4\\/StringBuilder.h",130,0,0,0
 	.stabs	"Vector<char*>:Tt(24,1)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(24,2)=*(4,5),64,32;__base_ctor::(24,3)=#(24,1),(0,6),(24,4)=*(24,1),(0,3),(0,6);:_ZN6MAUtil6VectorIPcEC2Ei;2A.;__comp_ctor::(24,3):_ZN6MAUtil6VectorIPcEC1Ei;2A.;__base_ctor::(24,5)=#(24,1),(0,6),(24,4),(24,6)=*(24,7)=k(4,5),(0,3),(0,6);:_ZN6MAUtil6VectorIPcEC2EPKS1_i;2A.;__comp_ctor::(24,5):_ZN6MAUtil6VectorIPcEC1EPKS1_i;2A.;__base_ctor::(24,8)=#(24,1),(0,6),(24,4),(24,9)=&(24,10)=k(24,1),(0,6);:_ZN6MAUtil6VectorIPcEC2ERKS2_;2A.;__comp_ctor::(24,8):_ZN6MAUtil6VectorIPcEC1ERKS2_;2A.;__base_dtor::(24,11)=#(24,1),(0,6),(24,4),(0,6);:_ZN6MAUtil6VectorIPcED2Ev;2A.;__comp_dtor::(24,11):_ZN6MAUtil6VectorIPcED1Ev;2A.;operator=::(24,12)=#(24,1),(24,13)=&(24,1),(24,4),(24,9),(0,6);:_ZN6MAUtil6VectorIPcEaSERKS2_;2A.;add::(24,14)=#(24,1),(0,6),(24,4),(24,15)=&(24,7),(0,6);:_ZN6MAUtil6VectorIPcE3addERKS1_;2A.(24,5):_ZN6MAUtil6VectorIPcE3addEPKS1_i;2A.;remove::(24,16)=#(24,1),(0,6),(24,4),(24,2),(0,6);:_ZN6MAUtil6VectorIPcE6removeEPS1_;2A.(24,17)=#(24,1),(0,6),(24,4),(0,3),(0,6);:_ZN6MAUtil6VectorIPcE6removeEi;2A.(24,18)=#(24,1),(0,6),(24,4),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPcE6removeEii;2A.;insert::(24,19)=#(24,1),(0,6),(24,4),(0,3),(4,5),(0,6);:_ZN6MAUtil6VectorIPcE6insertEiS1_;2A.;size::(24,20)=#(24,1),(0,3),(24,21)=*(24,10),(0,6);:_ZNK6MAUtil6VectorIPcE4sizeEv;2B.;resize::(24,17):_ZN6MAUtil6VectorIPcE6resizeEi;2A.;reserve::(24,17):_ZN6MAUtil6VectorIPcE7reserveEi;2A.;clear::(24,11):_ZN6MAUtil6VectorIPcE5clearEv;2A.;empty::(24,22)=#(24,1),(0,4),(24,21),(0,6);:_ZNK6MAUtil6VectorIPcE5emptyEv;2B.;capacity::(24,20):_ZNK6MAUtil6VectorIPcE8capacityEv;2B.;begin::(24,23)=#(24,1),(24,2),(24,4),(0,6);:_ZN6MAUtil6VectorIPcE5beginEv;2A.;end::(24,23):_ZN6MAUtil6VectorIPcE3endEv;2A.;begin::(24,24)=#(24,1),(24,6),(24,21),(0,6);:_ZNK6MAUtil6VectorIPcE5beginEv;2B.;end::(24,24):_ZNK6MAUtil6VectorIPcE3endEv;2B.;operator[]::(24,25)=#(24,1),(24,26)=&(4,5),(24,4),(0,3),(0,6);:_ZN6MAUtil6VectorIPcEixEi;2A.(24,27)=#(24,1),(24,15),(24,21),(0,3),(0,6);:_ZNK6MAUtil6VectorIPcEixEi;2B.;pointer::(24,24):_ZNK6MAUtil6VectorIPcE7pointerEv;2B.(24,23):_ZN6MAUtil6VectorIPcE7pointerEv;2A.;;",128,0,94,0
 	.stabs	"StringBuilder:Tt(24,28)=s36mLen:/0(0,3),0,32;mStrings:/0(24,1),32,96;mLastString:/0(4,5),128,32;mStringLength:/0(0,3),160,32;mIsDirty:/0(0,3),192,32;mCharsUsed:/0(0,3),224,32;mOutput:/0(7,1),256,32;__base_ctor::(24,29)=#(24,28),(0,6),(24,30)=*(24,28),(0,3),(0,6);:_ZN13StringBuilderC2Ei;2A.;__comp_ctor::(24,29):_ZN13StringBuilderC1Ei;2A.;__base_dtor::(24,31)=#(24,28),(0,6),(24,30),(0,6);:_ZN13StringBuilderD2Ev;2A.;__comp_dtor::(24,31):_ZN13StringBuilderD1Ev;2A.;append::(24,32)=#(24,28),(0,6),(24,30),(10,7),(0,6);:_ZN13StringBuilder6appendEPKc;2A.(24,33)=#(24,28),(0,6),(24,30),(4,5),(0,6);:_ZN13StringBuilder6appendEPc;2A.(24,34)=#(24,28),(0,6),(24,30),(24,35)=*(7,1),(0,6);:_ZN13StringBuilder6appendEPN6MAUtil11BasicStringIcEE;2A.(24,36)=#(24,28),(0,6),(24,30),(7,1),(0,6);:_ZN13StringBuilder6appendEN6MAUtil11BasicStringIcEE;2A.;appendFormat::(24,37)=#(24,28),(0,6),(24,30),(10,7);:_ZN13StringBuilder12appendFormatEPKcz;2A.;toString::(24,38)=#(24,28),(18,35),(24,30),(0,6);:_ZN13StringBuilder8toStringEv;2A.;toData::(24,39)=#(24,28),(4,10),(24,30),(0,6);:_ZN13StringBuilder6toDataEv;2A.;length::(24,40)=#(24,28),(0,3),(24,30),(0,6);:_ZN13StringBuilder6lengthEv;2A.;clear::(24,31):_ZN13StringBuilder5clearEv;2A.;reserveString::(24,41)=#(24,28),(0,6),(24,30),(0,3),(0,6);:_ZN13StringBuilder13reserveStringEi;0A.;operator=::(24,42)=#(24,28),(24,43)=&(24,28),(24,30),(24,44)=&(24,45)=k(24,28),(0,6);:_ZN13StringBuilderaSERKS_;2A.;__base_ctor::(24,46)=#(24,28),(0,6),(24,30),(24,44),(0,6);:_ZN13StringBuilderC2ERKS_;2A.;__comp_ctor::(24,46):_ZN13StringBuilderC1ERKS_;2A.;;",128,0,35,0
 	.stabn	162,0,0,0
@@ -517,7 +517,7 @@ Lscope16:
 Lscope17:
 .data
 LC0:
-	.ascii "WhappyZap\0"
+	.ascii "WhappyZap1\0"
 LC1:
 	.ascii "\0"
 LC2:
@@ -535,7 +535,7 @@ LC6:
 	.stabs	"this:P(0,69)=k(0,28)",64,0,28,8
 
 .func __ZN8MyMobletC1Ev, 1, void
-	.stabs	"C:\\MoSync\\workspace\\ipmedt4\\main.cpp",132,0,0,Ltext3
+	.stabs	"C:\\Users\\Tim\\git\\ipmedt4\\ipmedt4\\main.cpp",132,0,0,Ltext3
 Ltext3:
 	.line 28
 	push rt,d7
@@ -620,7 +620,7 @@ Ltext4:
 L26:
 	.dlab LBE13
 	.dlab LBE12
-	.stabs	"C:\\MoSync\\workspace\\ipmedt4\\main.cpp",132,0,0,Ltext5
+	.stabs	"C:\\Users\\Tim\\git\\ipmedt4\\ipmedt4\\main.cpp",132,0,0,Ltext5
 Ltext5:
 	.line 62
 	ld   d0,[fr,-92]
@@ -641,7 +641,7 @@ Ltext6:
 L29:
 	.dlab LBE15
 	.dlab LBE14
-	.stabs	"C:\\MoSync\\workspace\\ipmedt4\\main.cpp",132,0,0,Ltext7
+	.stabs	"C:\\Users\\Tim\\git\\ipmedt4\\ipmedt4\\main.cpp",132,0,0,Ltext7
 Ltext7:
 	.line 65
 	add  d0,d7
@@ -660,7 +660,7 @@ Ltext8:
 L32:
 	.dlab LBE17
 	.dlab LBE16
-	.stabs	"C:\\MoSync\\workspace\\ipmedt4\\main.cpp",132,0,0,Ltext9
+	.stabs	"C:\\Users\\Tim\\git\\ipmedt4\\ipmedt4\\main.cpp",132,0,0,Ltext9
 Ltext9:
 	.line 71
 	ld   d0,[fr,-96]
@@ -683,7 +683,7 @@ Ltext10:
 L35:
 	.dlab LBE19
 	.dlab LBE18
-	.stabs	"C:\\MoSync\\workspace\\ipmedt4\\main.cpp",132,0,0,Ltext11
+	.stabs	"C:\\Users\\Tim\\git\\ipmedt4\\ipmedt4\\main.cpp",132,0,0,Ltext11
 Ltext11:
 	.line 74
 	add  d0,d6
@@ -702,7 +702,7 @@ Ltext12:
 L38:
 	.dlab LBE21
 	.dlab LBE20
-	.stabs	"C:\\MoSync\\workspace\\ipmedt4\\main.cpp",132,0,0,Ltext13
+	.stabs	"C:\\Users\\Tim\\git\\ipmedt4\\ipmedt4\\main.cpp",132,0,0,Ltext13
 Ltext13:
 	.line 80
 	ld   d0,[fr,-100]
@@ -725,7 +725,7 @@ Ltext14:
 L41:
 	.dlab LBE23
 	.dlab LBE22
-	.stabs	"C:\\MoSync\\workspace\\ipmedt4\\main.cpp",132,0,0,Ltext15
+	.stabs	"C:\\Users\\Tim\\git\\ipmedt4\\ipmedt4\\main.cpp",132,0,0,Ltext15
 Ltext15:
 	.line 83
 	add  d0,d5
@@ -812,7 +812,7 @@ L19:
 	.dlab LBE4
 	.dlab LBE3
 	.dlab LBE2
-	.stabs	"C:\\MoSync\\workspace\\ipmedt4\\main.cpp",132,0,0,Ltext17
+	.stabs	"C:\\Users\\Tim\\git\\ipmedt4\\ipmedt4\\main.cpp",132,0,0,Ltext17
 Ltext17:
 	.line 117
 	ld   sp,[fr,-108]
@@ -1028,7 +1028,7 @@ LC13:
 	.stabs	"urlData:P(4,10)",64,0,128,14
 
 .func __ZN8MyMoblet20handleWebViewMessageEPN8NativeUI7WebViewEi, 3, void
-	.stabs	"C:\\MoSync\\workspace\\ipmedt4\\main.cpp",132,0,0,Ltext19
+	.stabs	"C:\\Users\\Tim\\git\\ipmedt4\\ipmedt4\\main.cpp",132,0,0,Ltext19
 Ltext19:
 	.line 128
 	push rt,d7
@@ -1298,7 +1298,7 @@ L66:
 L70:
 	.dlab LBE76
 	.dlab LBE75
-	.stabs	"C:\\MoSync\\workspace\\ipmedt4\\main.cpp",132,0,0,Ltext21
+	.stabs	"C:\\Users\\Tim\\git\\ipmedt4\\ipmedt4\\main.cpp",132,0,0,Ltext21
 Ltext21:
 	.line 180
 	ld   i0,d3
@@ -1404,7 +1404,7 @@ Ltext22:
 	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
 	ld   i0,#0xffffff68
 	.dlab LBE62
-	.stabs	"C:\\MoSync\\workspace\\ipmedt4\\main.cpp",132,0,0,Ltext23
+	.stabs	"C:\\Users\\Tim\\git\\ipmedt4\\ipmedt4\\main.cpp",132,0,0,Ltext23
 Ltext23:
 	.line 201
 	add  i0,fr
@@ -1459,7 +1459,7 @@ L81:
 L71:
 	.dlab LBE85
 	.dlab LBE84
-	.stabs	"C:\\MoSync\\workspace\\ipmedt4\\main.cpp",132,0,0,Ltext25
+	.stabs	"C:\\Users\\Tim\\git\\ipmedt4\\ipmedt4\\main.cpp",132,0,0,Ltext25
 Ltext25:
 	.line 192
 	ld   i0,d3

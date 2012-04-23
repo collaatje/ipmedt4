@@ -1,5 +1,6 @@
-C:\MoSync\workspace\ipmedt4\FinalOutput\Release\Samsung\Galaxy\ S\main.s:  \
- C:\MoSync\workspace\ipmedt4\main.cpp \
+ \
+ C:\Users\Tim\git\ipmedt4\ipmedt4\FinalOutput\Release\Samsung\Galaxy\ S\main.s:  \
+ C:\Users\Tim\git\ipmedt4\ipmedt4\main.cpp \
   c:/MoSync/include/Wormhole/WebAppMoblet.h \
   c:/MoSync/include/MAUtil/Moblet.h c:/MoSync/include/ma.h \
   c:/MoSync/include/maapi.h c:/MoSync/include/maapi_defs.h \
@@ -26,6 +27,6 @@ C:\MoSync\workspace\ipmedt4\FinalOutput\Release\Samsung\Galaxy\ S\main.s:  \
   c:/MoSync/include/MAUtil/HashDict_impl.h \
   c:/MoSync/include/MAUtil/HashMap_impl.h \
   c:/MoSync/include/Wormhole/FileUtil.h \
-  C:\MoSync\workspace\ipmedt4\/StringBuilder.h \
+  C:\Users\Tim\git\ipmedt4\ipmedt4\/StringBuilder.h \
   c:/MoSync/include/MAUtil/PlaceholderPool.h c:/MoSync/include/maarg.h \
   c:/MoSync/include/MAUtil/DataHandler.h

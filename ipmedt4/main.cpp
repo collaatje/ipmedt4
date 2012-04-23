@@ -26,7 +26,7 @@ private:
 public:
 	MyMoblet()
 	{
-		storeName = "WhappyZap";
+		storeName = "WhappyZap1";
 
 		// Enable message sending from JavaScript to C++.
 		enableWebViewMessages();
